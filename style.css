@@ -1,0 +1,66 @@
+/* 全体のフォントやベース設定 */
+body {
+  font-family: sans-serif;
+  margin: 20px;
+}
+
+/* 言語切り替えボタンのスタイル */
+.lang-switch-container {
+  text-align: right;
+  margin-bottom: 16px;
+}
+
+.lang-btn {
+  background: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 13px;
+  margin-left: 4px;
+}
+
+.lang-btn.active {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+/* インストーラー全体のコンテナ */
+#gemini-nano-installer {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin: 16px 0;
+  border-radius: 8px;
+  max-width: 400px;
+  background-color: #f9f9f9;
+}
+
+/* 見出し */
+#gemini-nano-installer h3 {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+/* ステータステキスト */
+#gemini-status-text {
+  font-size: 14px;
+  color: #555;
+}
+
+/* プログレスバー */
+#gemini-progress-bar {
+  width: 100%;
+  display: none;
+  margin-top: 8px;
+}
+
+/* ボタンまわりのレイアウト */
+.button-container {
+  margin-top: 12px;
+}
+
+#gemini-install-btn {
+  padding: 8px 16px;
+  cursor: pointer;
+}

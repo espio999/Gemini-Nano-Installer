@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title data-i18n="docTitle">Gemini Nano インストールページ</title>
+  <!-- 外部CSSの読み込み -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 言語切り替えコントロール -->
+  <div class="lang-switch-container">
+    <button id="lang-btn-ja" class="lang-btn active">日本語</button>
+    <button id="lang-btn-en" class="lang-btn">English</button>
+  </div>
+
+  <h1 data-i18n="pageTitle">アプリ利用前準備</h1>
+  <p data-i18n="pageDesc">メイン機能を利用する前に、以下のコンポーネントからローカルAIモデルをインストールしてください。</p>
+
+  <!-- インストーラーUIの挿入先 -->
+  <div id="gemini-installer-root">
+    <div id="gemini-nano-installer">
+      <h3 data-i18n="cardTitle">Gemini Nano モデルのセットアップ</h3>
+      <p id="gemini-status-text">...</p>
+      <progress id="gemini-progress-bar" value="0" max="100"></progress>
+      <div class="button-container">
+        <button id="gemini-install-btn" disabled>...</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 外部JavaScriptの読み込み -->
+  <script src="main.js"></script>
+</body>
+</html>
